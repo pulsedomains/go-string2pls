@@ -1,11 +1,11 @@
-# go-string2eth
+# go-string2pls
 
-[![Tag](https://img.shields.io/github/tag/wealdtech/go-string2eth.svg)](https://github.com/wealdtech/go-string2eth/releases/)
-[![License](https://img.shields.io/github/license/wealdtech/go-string2eth.svg)](LICENSE)
-[![GoDoc](https://godoc.org/github.com/wealdtech/go-string2eth?status.svg)](https://godoc.org/github.com/wealdtech/go-string2eth)
-[![Travis CI](https://img.shields.io/travis/wealdtech/go-string2eth.svg)](https://travis-ci.org/wealdtech/go-string2eth)
-[![codecov.io](https://img.shields.io/codecov/c/github/wealdtech/go-string2eth.svg)](https://codecov.io/github/wealdtech/go-string2eth)
-[![Go Report Card](https://goreportcard.com/badge/github.com/wealdtech/go-string2eth)](https://goreportcard.com/report/github.com/wealdtech/go-string2eth)
+[![Tag](https://img.shields.io/github/tag/pulsedomains/go-string2pls.svg)](https://github.com/pulsedomains/go-string2pls/releases/)
+[![License](https://img.shields.io/github/license/pulsedomains/go-string2pls.svg)](LICENSE)
+[![GoDoc](https://godoc.org/github.com/pulsedomains/go-string2pls?status.svg)](https://godoc.org/github.com/pulsedomains/go-string2pls)
+[![Travis CI](https://img.shields.io/travis/pulsedomains/go-string2pls.svg)](https://travis-ci.org/pulsedomains/go-string2pls)
+[![codecov.io](https://img.shields.io/codecov/c/github/pulsedomains/go-string2pls.svg)](https://codecov.io/github/pulsedomains/go-string2pls)
+[![Go Report Card](https://goreportcard.com/badge/github.com/pulsedomains/go-string2pls)](https://goreportcard.com/report/github.com/pulsedomains/go-string2pls)
 
 Go utility library to convert strings to Ether values and vice versa.
 
@@ -25,15 +25,15 @@ This also provides the ability to convert between string and GWei values.
 
 ## Install
 
-`go-string2eth` is a standard Go module which can be installed with:
+`go-string2pls` is a standard Go module which can be installed with:
 
 ```sh
-go get github.com/wealdtech/go-string2eth
+go get github.com/pulsedomains/go-string2pls
 ```
 
 ## Usage
 
-`go-string2eth` converts from strings to Ether values and back again.
+`go-string2pls` converts from strings to Ether values and back again.
 
 ### Example
 
@@ -41,19 +41,19 @@ go get github.com/wealdtech/go-string2eth
 package main
 
 import (
-	string2eth "github.com/wealdtech/go-string2eth"
+	string2pls "github.com/pulsedomains/go-string2pls"
 )
 
 func main() {
 
     // Convert a string value to a number of Wei
-    value, err := string2eth.StringToWei("0.05 Ether")
+    value, err := string2pls.StringToWei("0.05 Ether")
     if err != nil {
         panic(err)
     }
 
     // Convert a number of Wei to a string value
-    str := string2eth.WeiToString(value, true)
+    str := string2pls.WeiToString(value, true)
 
     fmt.Printf("0.05 Ether is %v Wei, is %s\n", value, str)
 }
@@ -65,7 +65,7 @@ Jim McDonald: [@mcdee](https://github.com/mcdee).
 
 ## Contribute
 
-Contributions welcome. Please check out [the issues](https://github.com/wealdtech/go-string2eth/issues).
+Contributions welcome. Please check out [the issues](https://github.com/pulsedomains/go-string2pls/issues).
 
 ## License
 

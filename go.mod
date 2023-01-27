@@ -1,4 +1,4 @@
-module github.com/wealdtech/go-string2eth
+module github.com/pulsedomains/go-string2pls
 
 go 1.12
 
